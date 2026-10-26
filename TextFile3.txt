@@ -1,0 +1,126 @@
+		Chapter 3 Expressions and Interactivitiy
+
+	3.1 The cin Object
+
+			The cin object can be used to read input from the keyboard.
+
+		Most programs will ask you for information which it will then assign to variables within 
+	the rest of the code. This means the program won't need to be re-executed each time you would like
+	to enter some different set of data.
+
+		Just as cout is C++ standard output object, cin is the standard input object.
+
+		consider the following code snippet. Asume the variable length refers to some int type named length:
+
+			cout << "Enter the length of a rectangle: ";
+			cin >> length;
+
+		This will output the question "enter the length of a rectangle: ", the prompt for the user,
+	followed by the next line, which uses the cin object to read a value from the keyboard.
+
+		>> is the stream extraction operator. it will get characters from the stream object on its left
+	and store them on the variable that appears on its right.
+
+		Gathering input from the user is a two step process:
+
+			1. use the cout object to display a prompt on the screen.
+			2. Use the cin object to read a value from the keyboard.
+
+		The cin object will cause the program to wait until data is typed at the keyboard and the enter 
+	key is pressed.
+
+		If, at that prompt in the snippet, the user enters 10, it is read as the characters '1' and '0', 
+	and cin is structured in a way that it knows the input will have to be converted to an int value before it
+	can be stored in the length variable. cin is also able to determine that 10.9 cannot be stored in an
+	integer variable. If the user enters a floating-point number for an integer variable, cin will
+	not read the part of the number after the decimal point.
+
+
+ENTERING MULTIPLE VALUES
+
+		The cin object can be used to enter multiple values at once.
+
+			cin >> length >> width;
+
+		The user can enter numbers separated by spaces, and cin will separate them into the length and width 
+	variables. This can also be used to enter different data typed as well.
+
+			int whole;
+			double fractional;
+			char letter;
+
+			cout << "enter an int, double, and letter: ";
+			cin >> whole >> fractional >> letter;
+
+		When the user enters values on the keyboard, those values are stored in memory in the keyboard buffer.
+
+===============================================================================
+							figure 3.2
+
+									Keyboard Buffer
+
+									_______________________________
+									|5|.|7|  | 4 |   |  b |[Enter]|
+									|_|_|_|__|___|___|____|_______|
+									 ^
+									 |
+									 cin begins reading here.
+===============================================================================
+
+
+		When the user presses the enter key, cin reads the value 5 into the variable whole, it will not read the
+	decimal part of the number. Next it will read the .7 and put that in fractional.
+	
+		The space is skipped. Next it will read the value 4 and put that in the variable letter.
+
+		It will then keep b in the buffer.
+
+
+
+
+
+3.7 Formatting Output
+
+
+	cout provides a way to output your data that is being displayed.
+
+	There are several ways you can display or print data.
+
+
+				720
+				720.0
+				720.000000
+				7.2e+2
+				+720.0
+
+
+	in order to do formatting, you need to include <iomanip> in your code.
+
+
+	A basic way to format your code is setw. setw is a stream manipulator that can establish
+	print fields of a specified width.
+
+				value = 23;
+				cout << setw(5) << value;
+
+		The number inside parenthesis is how much field width will be given to the value immediately following it.
+	The field width is the minimum value of character positions (spaces), on screen to print the value in.
+
+		The above code will apply a minimum field width of 5 to the number 23. Since 23 occupies two positions
+	on screen, 3 blank spaces will be printed before it.
+
+		To illustrate, refer to this snippet:
+
+				value = 23;
+				cout << setw(5) << value;
+
+		will cause the following output:
+
+				 _____
+				(   23)
+
+		The _ are not visible, but used to show the three spaces of padding, followed by the two characters
+		on screen.
+		
+
+

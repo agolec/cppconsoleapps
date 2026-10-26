@@ -1,0 +1,11 @@
+Using the Modulus operator and integer division
+
+The modulus operator is pretty useful. If you need the rightmost digit of a number, you can
+use % and divide by 10, then the rightmost number will be the remainder.
+
+Because any number divided by 10 will decrease it by one magnitude, leaving that rightmost number behind.
+
+2026 % 10 = (202 x 10) + 6
+
+	we would get 6 back from modulus operation 2026 % 10.
+

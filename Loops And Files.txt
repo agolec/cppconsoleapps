@@ -1,0 +1,50 @@
+										Loops And Files
+
+		5.1		The Increment and Decrement Operators
+
+	++ and -- are operators that add or subtract 1 from their operands.
+
+		To INCREMENT a value means to increase it by one, and to DECREMENT a value is to subtract by one.
+		Both of the following statements increment the variable 'num' by one:
+
+			num = num + 1;
+			num += 1;
+
+		And 'num' is decremented in both of the following statements:
+			
+			num = num - 1;
+			num -= 1;
+
+		C++ provides a set of simple urnary operators designed just for incrementing or decrementing variables.
+		The increment operator is ++, and the decrement operator is --. The following statement uses the ++
+		operator to increment num:
+
+			num++;
+
+		and the following, decrements 'num' by one:
+			
+			num--;
+
+		These examples above are the ++ and -- operators used in POSTFIX mode (the operator comes after the variable.)
+
+		There is also a prefix mode, ++num and --num;
+
+		In statements that do more than just increment or decrement a value, like
+
+			num = 4;
+			cout << num++;
+
+		cout is doing two things: 1) displaying the value of num, and 2) incrementing num by one. But which one happens
+		first is determined by whether post or prefix are used. If ++num is used, it will add 1 to num first,
+		and output 5. If postfix is used, it will display 4, and increment it to 5 after cout displays its output.
+
+
+
+								5.2 Introduction to Loops: The while Loop
+
+			Loops are parts of programs that repeat.
+
+			A while loop has two parts to it: 1) an expression that is tested for true or false, and
+			2) a statement or block of code that repeats as long as the expression is true.
+
+				

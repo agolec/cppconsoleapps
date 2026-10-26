@@ -1,0 +1,53 @@
+		// A simple C++ Program
+		#include <iostream>
+		using namespace std;
+
+		int main(){
+			cout << "Programming is fun!";
+			return 0;
+		}
+-- Program 2.1 ^ ^ ^ ^
+
+				Parts of a C++ Program
+
+		Every c++ Program has anatomy to it.
+
+		In the above, line 1 starts with //, for comments.
+
+		Line 2, looks like this:
+			#include <iostream>
+
+		Because this line begins with a # symbol, it is called a preprocessor directive. The preprocessor
+		will read your program before compilation, and only executes the lines which start with # symbols.
+
+		The #include directive causes the preprocessor to include contents of another file into your program.
+		In this case, the file iostream. The iostream file contains code that allows a C++ program to:
+	
+			DISPLAY output on the screen and 
+			READ input from the keyboard.
+
+		Because this program will use cout to show output to the screen, the iostream file must be included.
+
+		The contents of the iostream file will be included at the point where the #include statement appears.
+		The iostream file is called a header file, so it should be included in the head of your program.
+
+
+		Line 3 reads:
+			using namespace std;
+
+		Programs usually contain several unique items with unique names. In this chapter we cover variables.
+		Chapter 6 covers functions. Chapter 13 covers objects. Variables, Objects, and Functions are
+		examples of programming entities that MUST have names. C++ uses NAMESPACES to organize the names
+		of program entities.
+
+		The statement 'using namespace std;' declares the program will be accessing entities whose names
+		are a part of the namespace called std.
+
+		The reason this program needs access to the std namespace is because every name created by the
+		iostream file is a part of that namespace. In order for the program to use entities from that
+		namespace, it must have access to the std namespace.
+
+		Line 5 reads:
+			int main()
+
+		This marks the beginning of a function. The first function in every C++ program is main.

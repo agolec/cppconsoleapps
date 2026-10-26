@@ -1,0 +1,33 @@
+2.7 The Char Data Type
+
+	Char is used to store individual characters.
+
+	the character A would be store in memory as
+
+			_
+	       |A|
+		   |_|
+
+2.8 The string Class
+
+We use the string class to hold an entire string of data, since char can only hold one character.
+
+The first step is to include string, with
+
+	#include <string> 
+
+this preprocessor directive allows you to use string methods.
+
+
+Defining a string is like defining a primative type.
+
+	string movieTitle;
+
+You can assign a string literal with the = assignment operator.
+
+	movieTitle = "Mad Max: Fury Road";
+
+You can use it with cout to display output.
+
+	cout << "My favorite movie is: " << movieTitle << endl;
+

@@ -1,0 +1,114 @@
+			decisions
+
+
+	Relational Operators
+
+	Idea: Relational operators allow you to compare numeric char values and determine whther one is greater than, less than, equal to, or not equal to another.
+
+	Numeric Data is compared in C++ by using relational operators. Each relational operator
+	determines whether a specific relationship exists between two values.
+
+	Table 1.1
+
+	Relational Operator					Expression Meaning
+
+		X	>	Y					Is X Greater than Y?
+
+		X	<	Y					Is X Less than Y? 
+
+		X	>=	Y					Is X Greater than or equal to  Y?
+
+		X	<=	Y					Is X Less than or equal to Y?
+
+		X	!=	Y					Is X not equal to Y?
+
+		X	==	Y					Is X Equal to Y?
+
+	/***********************************/
+	*	All Relational Operators have	*
+	*	left-to-right associativity.	*
+	*	Recall that	associativity is	*
+	*	the order in which an operator	* 
+	*	works with its operands.		*
+	/***********************************/
+
+
+	The Value of a relationship
+
+	So how are relational expressions used in a program?
+
+	All Expressions have a value. RELATIONAL EXPRESSIONS are known as BOOLEAN EXPRESSIONS.
+
+	They are either TRUE or they are FALSE.
+
+	True is equal to the number 1, and False is equal to 0.
+
+
+
+
+
+
+
+
+	Checkpoint
+
+	4.5 write an if statement that performs the following logic: if the variable x is equal to 20 then assign 0 to the variable y.
+
+				int x = 3;
+				int y;
+
+				if(x == 20){
+					y = 0;
+				}
+	4.6 Write a variable statement that performs the following logic: If the variable price is greater than 500, set discountRate to 0.2.
+
+
+				float discountRate = 0.0;
+				double price = 0;
+
+				if(price < 500){
+					discountRate = 0.2;
+				}
+
+	4.7 Write an if statement that multiplies payRate by 1.5 if hours are greater than 40.
+
+
+			if(hoursWorked > 40){
+				payRate = 1.5;
+			}
+
+	4.8 TRUE or FALSE: Both of the following if statements perform the same oprtation:
+
+			if(sales > 10000)
+				commissionRate = 0.15;
+
+			if(sales > 10000) commissionRate = 0.15;
+
+			TRUE
+
+	4.9 TRUE or FALSE: Both of the following if statements perform the same operation:
+
+			if (calls == 20)
+				rate *= 0.5;
+
+			if (calls = 20)
+				rate *= 0.5;
+
+		FALSE. the first example properly uses the == relational expression. The second example
+		uses one = equality symbol and will not result in a relational expression. It will not compile.
+
+
+
+				CHECKPOINT
+
+	4.11
+
+	the following code segment is syntactically correct, but it appears to contain a logic error.
+
+	if(interestRate > .07)
+		cout << "This account earns a $10 bonus.\n";
+		balance += 10.0;
+
+	Without braces {}, the first statement, the cout, will be conditionally executed. The line 'balance += 10.0;',
+	will always execute.
+

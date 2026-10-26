@@ -1,0 +1,65 @@
+Short Answer
+
+1. Describe the difference between the if/else if statement and a series of if
+statements.
+
+		I believe that the difference is that an if/else if statement will check
+		every single condition in the sequence until a match is found. It is mutually
+		exclusive and only one condition will match and be executed.
+
+		Additionally, there is an optional trailing else that can execute each
+		time as a default option, if no other if/else if conditional expression
+		matches.
+
+		The 
+		
+		if(){
+
+		} 
+		else if (){ 
+			
+		}
+
+		In a series of if statements, each statement is independently evaluated, regardless
+		of whether a prior one has executed. Multiple matches are possible. At max, each
+		statement can execute, and at minimum, absolutely none will execute. There
+		is no default else statement- some other form of code will need to happen for
+		the equivalent type of execution to occur.
+
+2. In an if/else if statmenet, what is the purpose of the trailing else?
+
+		As explained above when I went overboard with my answer, the trailing else
+		is meant to allow some piece of code in a block of conditional expressions
+		to always execute.
+
+3. What is a flag and how does it work?
+	
+		A flag is a condition that is meant to allow a specific action to occur in
+		your code when encountered. It is made up of integers or booleans.
+
+		Ex: you are parsing a number from a string, you'll use a flag to allow
+		your code to loop until you've successfully entered a string that can
+		be parsed into a number.
+
+4. Can an if statement test expressions other than relational expressions? Explain.
+
+		Yes. It can check whether a boolean is a specific value, which is not relating
+		it to another variable. Statements can also be conditional and execute based
+		on the value of an integer by itself, 0 being false, and just about anything 
+		other than 0 being true.
+
+5. Briefly describe how the && operator works.
+
+		The && operator combines two expressions together for evaluation. Both expressions combined 
+		must be true for the condition to be considered or evaluated to TRUE.
+
+6. Briefly describe how the || operator works.
+	
+		The || operator is the OR operator. It evaluates two expressions, and in order to be true,
+		at least one expression must be true; if each expression is false, then the entire 
+		condition will be false.
+
+7. Why are the relational operators called relational?
+
+		They're called relational because they compare different values to one another. They
+		test and define the logical relationship between two operands

@@ -1,0 +1,115 @@
+The cout Object
+
+The simplest output we can have in a program is output to the console. 
+This produces plain text. The console is the keyboard and display used to interact with the computer.
+
+The terminal is the program or interface which allows you to interact with a command-line environment.
+
+cout is classified as a STREAM OBJECT which means works with streams of data. To print a message to the
+screen you send the stream of characters to cout.
+
+<< is the stream insertion operator. The item immediately to the right hand side of the operator is sent
+to cout, then displayed to the screen.
+
+A program can be written the following way, but will all print on one line.
+
+			int main(){
+
+				cout << "Programming is " << "great fun.";
+				return 0;
+			}
+or
+
+			int main(){
+
+				cout << "Programming is "; 
+				cout << "great fun.";
+				return 0;
+			}
+
+Both ways of writing this will output a single line unless linebreaks are used.
+
+In order to add in newlines, you need to use escape sequences.
+
+				Table 2.2
+
+
+			Escape			
+			Sequence		Name				Description
+			---------------------------------------------------------------------------------------
+			\n				Newline				Causes the cursor to go to the next line for subsequent
+												printing. Not to be confused with Newline Cinema,
+												who backed the creation of The Lord of the Rings by
+												Peter Jackson (2001 - 2003)
+			---------------------------------------------------------------------------------------
+			\t				Horizontal Tab		Causes the cursor to advance to the next tab stop.
+			---------------------------------------------------------------------------------------
+			\a				Alarm				Causes the computer to beep.
+			---------------------------------------------------------------------------------------
+			\b				Backspace			Causes the cursor to back up, or move left one position.
+			---------------------------------------------------------------------------------------
+			\r				Return				Causes the cursor to go to the beginning of the current
+												line, not the next line. Not to be confused with The
+												Return of King Aragorn, son of Arathorn II.
+			---------------------------------------------------------------------------------------
+			\\				Backslash			Causes a backslash to be printed.
+			---------------------------------------------------------------------------------------
+			\'				Single Quote		Causes a single quotation mark to be printed.
+			---------------------------------------------------------------------------------------
+			\"				Double Quote		Causes a double quotation mark to be printed.
+			---------------------------------------------------------------------------------------
+
+			In memory each of these characters, although typed out as two individual characters,
+			count as one character when stored in memory.
+
+
+			--------------------------------
+			|O|n|e|\n|T|w|o|\n|T|h|r|e|e|\n|
+			|_|_|_|__|_|_|_|__|_|_|_|_|_|__|
+
+
+
+		2.3 The Include Directive
+
+			The #include directive causes the contents of another file to be inserted into a program.
+
+			We need to use #include <iostream> in a program that uses the cout object because cout
+			
+			is not part of the "core" of the C++ language. Specifically, it is part of the 
+			input-output stream library. The header file, iostream, contains information describing
+			iostream objects. Without it, the compiler will not know how to properly compile a program
+			that uses cout.
+
+			Preprocessor directives are NOT C++ statements. They are commands to the pre-processor
+			which runs prior the compiler. The preprocessor's job is to set programs up in a way that
+			makes life easier for the programmer.
+
+			For example, any program that uses the cout object must contain the extensive setup information
+			found in iostream. The programmer could type out all of this information into the program,
+			but it would take up too much time. An alternative would be to use a text editor to cut and paste
+			the information into the program, but that would also take a lot of time to do. The preprocessor
+			can insert the contents of iostream in automatically.
+
+			
+		2.5 Hexadecimal and Octal literals.
+
+			You might need to read other people's code in the future so it is good to know
+			hexadecimal and octal literals.
+
+			hexadecimal is base 16 and octal is base 8.
+
+			These are used to take up less space than a decimal character when written out.
+
+			Hex uses 0x to indicate they're hexadecimal.
+
+			0xF4
+
+			represents F4.
+
+			In octagonal numbers, you start with 0.
+
+			031
+
+			octal 31
+
+

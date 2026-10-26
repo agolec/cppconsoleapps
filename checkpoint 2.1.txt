@@ -1,0 +1,57 @@
+Checkpoint
+
+	2.1 The following C++ program will not compile because the lines have been mixed up.
+
+			int main()
+
+			}
+			//a crazy mixed up program.
+			return0;
+			#include <iostream>
+			cout << "in 1492 Columbus sailed the ocean blue.";
+			{
+			using namespace std;
+
+	When these lines are properly arranged, the program should display the following on the screen:
+		
+			in 1492 Columbus sailed the ocean blue.
+
+	Rearrange the lines in the correct order.
+
+			#include <iostream>
+
+			using namespace std;
+			//a crazy mixed up program
+			int main()
+			{
+				cout << "in 1492 Columbus sailed the ocean blue.";
+				return 0;
+			}
+
+
+	2.7 Which of the following is an illegal variable identifier and why?
+
+		x
+		99bottles
+		july97
+		theSalesFiguresForTheFiscalYear
+		r&d
+		grade_report
+
+		99bottles - can't start with a number
+		r&d - can't have a & symbol in it.
+
+		The rest are valid.
+
+	2.8 Is the variable name Sales the same as sales? Why or why not?
+
+	2.9 Refer to the data types listed in table 2-6 for the following questions:
+
+		A) If a variable needs to hold a number between 32 and 6,000, what data type would be best?
+		unsigned int
+
+		B) If a variable needs to hold a number from range -40000 to +40000, what data type would be best?
+		int
+
+		C)which of the following uses more memory? 20 or 20L. 20L since it's storing floating point information and has more bytes used.
+
