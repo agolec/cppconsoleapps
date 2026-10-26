@@ -86,6 +86,15 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Miles Per Gallon", "Miles P
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PercentOfStudents", "PercentOfStudents\PercentOfStudents.vcxproj", "{DFF66861-B9F8-4C67-9E3A-087B897A6989}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter 06 - Functions", "Chapter 06 - Functions", "{2986BC65-A316-42FF-B0BC-180FECA89029}"
+	ProjectSection(SolutionItems) = preProject
+		chapter notes.txt = chapter notes.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "challenges", "challenges", "{BE74F057-F673-406B-9428-5098715784BE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "doubleANumber", "doubleANumber\doubleANumber.vcxproj", "{D697C78B-D5A6-4B5C-A5AB-1F25C7C4ECDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -238,6 +247,14 @@ Global
 		{DFF66861-B9F8-4C67-9E3A-087B897A6989}.Release|x64.Build.0 = Release|x64
 		{DFF66861-B9F8-4C67-9E3A-087B897A6989}.Release|x86.ActiveCfg = Release|Win32
 		{DFF66861-B9F8-4C67-9E3A-087B897A6989}.Release|x86.Build.0 = Release|Win32
+		{D697C78B-D5A6-4B5C-A5AB-1F25C7C4ECDB}.Debug|x64.ActiveCfg = Debug|x64
+		{D697C78B-D5A6-4B5C-A5AB-1F25C7C4ECDB}.Debug|x64.Build.0 = Debug|x64
+		{D697C78B-D5A6-4B5C-A5AB-1F25C7C4ECDB}.Debug|x86.ActiveCfg = Debug|Win32
+		{D697C78B-D5A6-4B5C-A5AB-1F25C7C4ECDB}.Debug|x86.Build.0 = Debug|Win32
+		{D697C78B-D5A6-4B5C-A5AB-1F25C7C4ECDB}.Release|x64.ActiveCfg = Release|x64
+		{D697C78B-D5A6-4B5C-A5AB-1F25C7C4ECDB}.Release|x64.Build.0 = Release|x64
+		{D697C78B-D5A6-4B5C-A5AB-1F25C7C4ECDB}.Release|x86.ActiveCfg = Release|Win32
+		{D697C78B-D5A6-4B5C-A5AB-1F25C7C4ECDB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -266,6 +283,8 @@ Global
 		{75CCB011-18E0-4401-8C2B-B3AEAF452EE9} = {5E6768D1-6D9F-4D4A-B2F4-FFCC8ED689B5}
 		{75940EA4-A4E9-420E-87F5-CCF78DC07367} = {75CCB011-18E0-4401-8C2B-B3AEAF452EE9}
 		{DFF66861-B9F8-4C67-9E3A-087B897A6989} = {75CCB011-18E0-4401-8C2B-B3AEAF452EE9}
+		{BE74F057-F673-406B-9428-5098715784BE} = {2986BC65-A316-42FF-B0BC-180FECA89029}
+		{D697C78B-D5A6-4B5C-A5AB-1F25C7C4ECDB} = {BE74F057-F673-406B-9428-5098715784BE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D3AB9BC-3435-460D-A068-33E12D10FBFF}
