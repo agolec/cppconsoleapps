@@ -1,0 +1,131 @@
+						Chapter 6 : Functions
+
+						Modular Programming
+
+		Functions enable your code to be broken up into several different reusable components that 
+	can be called when needed.
+
+		A Function is a group of statements that perform a specific task. So far, we've used them
+	in two ways in our coding adventure: 1) main is used in every program we've written, and
+	2) library functions such as pow and strcmp. We can also make our own, which can be used like 
+	library functions.
+
+
+		Functions enable a program to be broken down into smaller components/pieces. Instead of writing
+	a single long function that contains every necessary statement to solve a problem, several
+	smaller functions can be written and executed in the desired order to solve a problem.
+
+		Functions enable code reuse because we're writing code to perform a task, then we're reusing it
+	each time we need to perform a task.
+
+
+
+6.2 Defining and Calling Functions
+
+
+		When creating a function, you must write the DEFINITION- at least in C++ it's a bit different from
+	other languages you might already be familiar with. All functions have the following parts:
+
+		Return Type:	a function can send a value to the part of the program that executed it. The return
+						type is the data type of the value that is sent from the function.
+
+		Name:			You should give each function a name that describes what it does. In general,
+						the same rules that apply to variables apply to function names.
+
+		Parameter		The program can send data into a function. The parameter list is a list of
+		List:			the variables that hold values being passed to the function.
+
+		Body:			The body of a function is the set of statements that perform the function's
+						operation. They are enclosed in curly braces.
+
+
+		int main()
+		{
+			cout << "Hello World!\n";
+			return 0;
+		}
+
+
+		The return type is int
+
+		The function name is main
+
+		The parameter list is empty, but between the () symbols.
+
+		The body is between the outermost {} curly braces.
+
+
+
+									Void Functions
+
+		Void functions don't return any value. Some functions simply perform one or more statements,
+	then they terminate.
+
+
+		void printMessage(string message){
+			cout << message;
+		}
+
+		The above will simply print out whatever message is passed in to the function, then return to 
+	the area where the function was called from.
+
+
+
+									Calling a function
+
+		A function is executed when it is called. The function 'main' is called automatically when a program
+	starts execution, but all others must be executed with Function Call statements.
+
+		When a function is called, the program branches to that function and executes the statements in the
+	function body.
+
+
+
+
+	program 6-1
+
+			//This program has two functions: main and displayMessage
+			#include <iostream>
+
+			using namespace std;
+
+			void displayMessage(){
+				cout << "hello from function displayMessage."<< endl;
+			}
+
+			int main(){
+				cout << "Hello from main\n";
+				displayMessage();
+				cout << "Back in function main again\n.";
+				return 0;
+			}
+
+			displayMessage() on line 98 is a function call. It's simply the name of the function,
+		followed by a set of parenthesis and a semicolon.
+
+		The function header is void displayMessage()
+
+			The function header on line 92 is part of the function definition. It declares the function's
+		return type, name, and parameter list. It is not terminated with a semicolon because the function's
+		body follows it.
+
+			The function displayMessage is defined first because the compiler must know the function's return
+		type, the number of parameters, and the type of each parameter before the function is called.
+
+			Placing the function up on top is one way to ensure the compiler will know this information,
+		because it places the function definition before all the calls made to it. Later you will be shown
+		the alternative, more preferred method of accomplishing this.
+
+
+
+
+
+6.3 Function Prototypes
+
+	A function Protype will eliminate the need to place a function before all the calls to the function.
+
+
+		Before the compiler encounters a call to a particular function, it must already know the function's
+	return type, the number of parameters it uses, and the type of each parameter.
+
+		A prototype will look similar to a function header, but there is a semicolon at the end.
