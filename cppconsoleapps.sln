@@ -95,6 +95,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "challenges", "challenges", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "doubleANumber", "doubleANumber\doubleANumber.vcxproj", "{D697C78B-D5A6-4B5C-A5AB-1F25C7C4ECDB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BattleChains", "battleChain\battleChain.vcxproj", "{35A792F7-CA96-464A-99B2-69EF90ECFEAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -255,6 +257,14 @@ Global
 		{D697C78B-D5A6-4B5C-A5AB-1F25C7C4ECDB}.Release|x64.Build.0 = Release|x64
 		{D697C78B-D5A6-4B5C-A5AB-1F25C7C4ECDB}.Release|x86.ActiveCfg = Release|Win32
 		{D697C78B-D5A6-4B5C-A5AB-1F25C7C4ECDB}.Release|x86.Build.0 = Release|Win32
+		{35A792F7-CA96-464A-99B2-69EF90ECFEAD}.Debug|x64.ActiveCfg = Debug|x64
+		{35A792F7-CA96-464A-99B2-69EF90ECFEAD}.Debug|x64.Build.0 = Debug|x64
+		{35A792F7-CA96-464A-99B2-69EF90ECFEAD}.Debug|x86.ActiveCfg = Debug|Win32
+		{35A792F7-CA96-464A-99B2-69EF90ECFEAD}.Debug|x86.Build.0 = Debug|Win32
+		{35A792F7-CA96-464A-99B2-69EF90ECFEAD}.Release|x64.ActiveCfg = Release|x64
+		{35A792F7-CA96-464A-99B2-69EF90ECFEAD}.Release|x64.Build.0 = Release|x64
+		{35A792F7-CA96-464A-99B2-69EF90ECFEAD}.Release|x86.ActiveCfg = Release|Win32
+		{35A792F7-CA96-464A-99B2-69EF90ECFEAD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -285,6 +295,7 @@ Global
 		{DFF66861-B9F8-4C67-9E3A-087B897A6989} = {75CCB011-18E0-4401-8C2B-B3AEAF452EE9}
 		{BE74F057-F673-406B-9428-5098715784BE} = {2986BC65-A316-42FF-B0BC-180FECA89029}
 		{D697C78B-D5A6-4B5C-A5AB-1F25C7C4ECDB} = {BE74F057-F673-406B-9428-5098715784BE}
+		{35A792F7-CA96-464A-99B2-69EF90ECFEAD} = {BE74F057-F673-406B-9428-5098715784BE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D3AB9BC-3435-460D-A068-33E12D10FBFF}
