@@ -99,9 +99,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BattleChains", "battleChain
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Markup", "Markup\Markup.vcxproj", "{E21C0F05-2622-4301-A4CE-99A9B0CA51C2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter 07 - Arrays", "Chapter 07 - Arrays", "{8DB39EC9-4D2D-4A1C-B69E-354C0E7ED064}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chapter 07", "chapter 07", "{8DB39EC9-4D2D-4A1C-B69E-354C0E7ED064}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lecture", "lecture", "{23CD5552-25F8-4FB6-89BB-9E0A65E1FAB5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lecture notes", "lecture notes", "{23CD5552-25F8-4FB6-89BB-9E0A65E1FAB5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "challenges", "challenges", "{47888CA0-BDB0-47A5-B966-A6BDEB2370FE}"
 EndProject
